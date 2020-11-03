@@ -17,7 +17,7 @@ Note: Refresh tokens are only provided on the first request. The IETF documentat
 
 ### What You'll Need To Run This Locally
 
-##### Setting Up the API Client
+#### Setting Up the API Client
 
 You'll need to just follow [this tutorial](https://developers.google.com/identity/protocols/oauth2/web-server#top_of_page) and get the following fields:
 ```
@@ -33,7 +33,7 @@ You'll only need to do this once because the once you have one access token and 
 1. Rename the `config/template` to `config/.env` and replace the first 5 fields with their respective values. 
 2. Move `data/access_token.json` to `/bin/data/access_token.json` and replace the `<YOUR_ACCESS_TOKEN>` field with the respective value.
 
-##### Required Libraries
+#### Required Libraries
 
 You'll need the following libraries the `pyfirmata` python library to communicate with the arduino board, and you'll need to flash your arduino with the [standrard firmata](https://github.com/firmata/arduino/blob/master/examples/StandardFirmata/StandardFirmata.ino), firmata is a generic protocol for communicating with microcontrollers from software on a host computer. And you're all set! 
 
