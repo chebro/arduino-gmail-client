@@ -1,14 +1,14 @@
 # arduino-gmail-client
 
-A simple gmail client that makes cURL requests using gmail API to check for unread emails, the response is then used to control arduino pins. So if you connect and LED to the right pins, it will light up everytime you recieve an email. 
+A simple gmail client that makes cURL requests using gmail API to check for unread emails, the response is then used to control arduino pins. So if you connect an LED to the right pins, it will light up everytime you recieve an email!
 
-This was just something I wanted to try when I first stumbled up gmail API and OAuth 2.0 protocols, finally got an arduino to implement it.
+This was something I wanted to try when I first stumbled upon gmail API and OAuth 2.0 protocol, finally got an arduino to implement it!!
 
 ### How Does It Work?
 
-The code is extremely simple if you understand OAuth 2.0, if you don't read [this article from google](https://developers.google.com/identity/protocols/oauth2). In a nutshell, to access information from a user aka resource owner, a client must do the following:
-1. Get the authorization grant from the resource owner (via a [consent screen](https://developers.google.com/identity/protocols/oauth2/web-server#userconsentprompt)).
-2. In exchange to the grant, you recieve an authorisation code. 
+The code is extremely simple if you understand OAuth 2.0, if you don't, read [this article from google](https://developers.google.com/identity/protocols/oauth2). In a nutshell, to access information from a user (a.k.a the resource owner), a client must do the following:
+1. Get the authorization grant from the resource owner (for example, via a [consent screen](https://developers.google.com/identity/protocols/oauth2/web-server#userconsentprompt)).
+2. In exchange to the grant, you recieve an authorization code. 
 3. Exchange the authorization code for access and refresh tokens from the authorization server.
 4. Use the access tokens to make API calls on behalf of the user.
 5. If the access token expires, use the refresh token to request another access token.
