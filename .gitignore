@@ -1,3 +1,2 @@
-tests
-*.env
-*.json
+config/env
+data/response.json
